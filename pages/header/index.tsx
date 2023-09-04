@@ -15,7 +15,7 @@ export default function HeaderFunctions() {
             <Info size={32} style={{marginRight: 10}} />
             <Image
             style={styles.image}
-            source={avatar}/>   
+            source={avatar}/>
         </View>
     </View>
     )
@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginHorizontal: 20
+        marginHorizontal: 20,
+        marginTop: 10,
     },
     leftContainer: {
         justifyContent: 'flex-start',
