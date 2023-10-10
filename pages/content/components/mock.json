@@ -1,0 +1,18 @@
+{
+  "carrinho": [
+      {
+        "id": 1,
+        "title": "Dipirona",
+        "description": "Dipirona é um medicamento utilizado para tratar dores de cabeça, febre, dores musculares, dores de dente, dores menstruais, dores pós-operatórias e dores pós-parto. Também pode ser usado para tratar a febre em pessoas com câncer.",
+        "image": "https://www.minhavida.com.br/media/medicamentos/substancia/d/dipirona.jpg",
+        "price": "R$10.00"
+      },
+      {
+        "id": 2,
+        "title": "Buscopan",
+        "description": "Buscopan relaxa os espasmos musculares dos órgãos abdominais agindo somente onde ocorrem dores e cólicas - no abdômen.",
+        "image": "https://www.minhavida.com.br/media/medicamentos/substancia/b/butilescopolamina.jpg",
+        "price": "R$20.00"
+      }
+    ]
+}

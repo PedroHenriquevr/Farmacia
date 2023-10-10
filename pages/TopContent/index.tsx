@@ -1,6 +1,7 @@
 import { Faders, MagnifyingGlass } from "phosphor-react-native";
 import { useState } from "react";
-import { View, Text, StyleSheet, TextInput, Button, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import Input from './Components/index';
 
 export default function TopContent() {
   const [text, onChangeText] = useState('');
@@ -8,18 +9,11 @@ export default function TopContent() {
       <View style={styles.container}>
         <Text style={styles.welcome}>OmniPharm</Text>
         <View style={styles.buscadorContainer}>
-          <View style={styles.buscador}>
-            <MagnifyingGlass size={32} />
-            <TextInput
-            style={styles.input}
-            onChangeText={onChangeText}
-            placeholder="Buscar Produto"
-            />
-          </View>
+          <Input plaece="Buscar Produtos"/>
           <View style={styles.icon}>
            <Faders size={32} color="#fff" />
           </View>
-      </View>
+        </View>
       <View style={styles.buscadorContainer}>
       <TouchableOpacity style={styles.appButtonContainer}>
           <Text style={styles.appButtonText}>Todos</Text>
@@ -48,22 +42,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     fontWeight: 'bold'
   },
-  buscador: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 12,
-    flexDirection: 'row',
-    backgroundColor: '#dedede',
-    gap: 10,
-    borderRadius: 20,
-    width: 'auto'
-  },
-  input: {
-    width: 220,
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
+  
   icon: {
     backgroundColor: 'black',
     borderRadius: 18,
